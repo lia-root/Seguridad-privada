@@ -279,6 +279,9 @@ nav ul li a:hover {
 .stats-bar {
     background: var(--black);
     padding: 40px 20px;
+    position: relative;
+    margin-top: -100px;
+    z-index: 10;
 }
 
 .stats-container {
@@ -411,8 +414,11 @@ nav ul li a:hover {
 /* ===== POR QUÉ ELEGIRNOS ===== */
 .por-que {
     background: var(--black);
-    padding: 80px 40px;
+    padding: 60px 40px;
     color: var(--white);
+    position: relative;
+    margin-top: -60px;
+    z-index: 10;
 }
 
 .por-que-container {
