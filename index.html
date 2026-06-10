@@ -1,240 +1,301 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Web</title>
+    <title>Seguridad Privada</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <a href="#inicio" class="logo">Logo</a>
-        <nav>   
+    <header id="header">
+        <a href="#inicio" class="logo">
+            <svg class="logo-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 2.18l7 3.11v5.71c0 4.54-3.07 8.86-7 9.93-3.93-1.07-7-5.39-7-9.93V6.29l7-3.11z"/>
+                <path d="M11 7v6h2V7h-2zm0 8v2h2v-2h-2z"/>
+            </svg>
+            <span>SEGURIDAD<br><strong>PRIVADA</strong></span>
+        </a>
+        <nav>
             <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#inicio">INICIO</a></li>
+                <li><a href="#servicios">SERVICIOS</a></li>
+                <li><a href="#nosotros">NOSOTROS</a></li>
+                <li><a href="#contacto">CONTACTO</a></li>
             </ul>
         </nav>
+        <a href="tel:+526649422514" class="btn-header">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.56.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.56 1 1 0 01-.25 1.01l-2.2 2.22z"/></svg>
+            LLÁMANOS 24/7
+        </a>
+        <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
     </header>
-    
-    <!-- SECCIÓN INICIO -->
-    <section id="inicio">
-        <h1>Seguridad privada</h1>
-        <p>Empresa que inspira confianza</p>
+
+    <!-- HERO -->
+    <section id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>PROTEGEMOS <span class="highlight">LO QUE MÁS IMPORTA</span></h1>
+            <p>Somos una empresa de seguridad privada comprometida con proteger lo que más valoras. Ofrecemos soluciones integrales para empresas, residencias e industrias en Baja California.</p>
+            <div class="hero-buttons">
+                <a href="#contacto" class="btn btn-primary">SOLICITAR COTIZACIÓN</a>
+                <a href="#servicios" class="btn btn-outline">CONOCER SERVICIOS</a>
+            </div>
+        </div>
     </section>
-    
-    <!-- SECCIÓN SERVICIOS -->
+
+    <!-- STATS -->
+    <section class="stats-bar">
+        <div class="stats-container">
+            <div class="stat-item">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-1 6h2v2h-2V7zm0 4h2v6h-2v-6z"/></svg>
+                <span>+10 AÑOS DE EXPERIENCIA</span>
+            </div>
+            <div class="stat-item">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+                <span>+100 CLIENTES PROTEGIDOS</span>
+            </div>
+            <div class="stat-item">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+                <span>COBERTURA EN BAJA CALIFORNIA</span>
+            </div>
+            <div class="stat-item">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                <span>24/7 ATENCIÓN Y SUPERVISIÓN</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICIOS -->
     <section id="servicios">
-        <h2>Nuestros Servicios</h2>
+        <div class="section-header">
+            <span class="section-tag">NUESTROS SERVICIOS</span>
+            <h2>SEGURIDAD PARA CADA NECESIDAD</h2>
+        </div>
         <div class="servicios-grid">
-            <div class="servicio-panel" data-panel="comercial">
-                <img src="Images/Comercial.jpg" alt="Comercial">
-                <div class="panel-overlay">
-                    <h3>Comercial</h3>
+            <article class="servicio-card">
+                <div class="servicio-img">
+                    <img src="Images/Comercial.jpg" alt="Seguridad comercial">
+                    <div class="servicio-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"/></svg>
+                    </div>
                 </div>
-                <div class="panel-list comercial-list">
-                    <ul>
-                        <li>Call Center</li>
-                        <li>Hoteles</li>
-                        <li>Farmacias</li>
-                        <li>Laboratorios</li>
-                        <li>Parking</li>
-                        <li>Restaurantes</li>
-                    </ul>
+                <div class="servicio-body">
+                    <h3>COMERCIAL</h3>
+                    <p>Protección para hoteles, farmacias, restaurantes, laboratorios, call centers y más. Personal capacitado para entornos comerciales de alto tráfico.</p>
+                    <a href="#contacto" class="servicio-link">VER MÁS &gt;</a>
                 </div>
+            </article>
+            <article class="servicio-card">
+                <div class="servicio-img">
+                    <img src="Images/Residencial.jpg" alt="Seguridad residencial">
+                    <div class="servicio-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+                    </div>
+                </div>
+                <div class="servicio-body">
+                    <h3>RESIDENCIAL</h3>
+                    <p>Vigilancia para hogares, departamentos, privadas, escuelas y terrenos. Tranquilidad y protección las 24 horas para tu familia y patrimonio.</p>
+                    <a href="#contacto" class="servicio-link">VER MÁS &gt;</a>
+                </div>
+            </article>
+            <article class="servicio-card">
+                <div class="servicio-img">
+                    <img src="Images/Industrial.jpg" alt="Seguridad industrial">
+                    <div class="servicio-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 21V7L14 3v4H4v14h18zM6 19h2v-6H6v6zm4 0h2v-4h-2v4zm4 0h2v-7h-2v7zm4 0h2v-9h-2v9z"/></svg>
+                    </div>
+                </div>
+                <div class="servicio-body">
+                    <h3>INDUSTRIAL</h3>
+                    <p>Seguridad especializada para bodegas, hospitales, bancos, oficinas y constructoras. Protocolos estrictos para entornos industriales y de alto riesgo.</p>
+                    <a href="#contacto" class="servicio-link">VER MÁS &gt;</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- POR QUÉ ELEGIRNOS -->
+    <section id="por-que" class="por-que">
+        <div class="por-que-container">
+            <div class="por-que-text">
+                <span class="section-tag">¿POR QUÉ ELEGIRNOS?</span>
+                <h2>TU SEGURIDAD, <span class="highlight">NUESTRA PRIORIDAD</span></h2>
+                <p>Combinamos personal altamente capacitado, supervisión constante y tecnología de punta para ofrecerte la tranquilidad que mereces. Cada cliente recibe un plan de seguridad personalizado.</p>
             </div>
-            <div class="servicio-panel" data-panel="residencial">
-                <img src="Images/Residencial.jpg" alt="Residencial">
-                <div class="panel-overlay">
-                    <h3>Residencial</h3>
+            <div class="por-que-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                    </div>
+                    <h4>PERSONAL CAPACITADO</h4>
                 </div>
-                <div class="panel-list residencial-list">
-                    <ul>
-                        <li>Escuelas</li>
-                        <li>Terrenos baldíos</li>
-                        <li>Hogares</li>
-                        <li>Departamentos</li>
-                        <li>Privadas</li>
-                    </ul>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+                    </div>
+                    <h4>SUPERVISIÓN CONSTANTE</h4>
                 </div>
-            </div>
-            <div class="servicio-panel" data-panel="industrial">
-                <img src="Images/Industrial.jpg" alt="Industrial">
-                <div class="panel-overlay">
-                    <h3>Industrial</h3>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13 3c-4.97 0-9 4.03-9 9H1l3.89 3.89.07.14L9 12H6c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7c-1.93 0-3.68-.79-4.94-2.06l-1.42 1.42A8.954 8.954 0 0013 21c4.97 0 9-4.03 9-9s-4.03-9-9-9zm-1 5v5l4.28 2.54.72-1.21-3.5-2.08V8H12z"/></svg>
+                    </div>
+                    <h4>RESPUESTA INMEDIATA</h4>
                 </div>
-                <div class="panel-list industrial-list">
-                    <ul>
-                        <li>Oficinas</li>
-                        <li>Hospitales</li>
-                        <li>Bodegas</li>
-                        <li>Bancos</li>
-                        <li>Constructoras</li>
-                    </ul>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 18c1.1 0 1.99-.9 1.99-2L22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z"/></svg>
+                    </div>
+                    <h4>TECNOLOGÍA AVANZADA</h4>
                 </div>
             </div>
         </div>
     </section>
-    
-    <!-- SECCIÓN NOSOTROS -->
+
+    <!-- NOSOTROS -->
     <section id="nosotros">
-        <h2>Sobre Nosotros</h2>
         <div class="nosotros-container">
-            <!-- Presentación -->
-            <div class="presentacion">
-                <div class="presentacion-content">
-                    <div class="presentacion-text">
-                        <p>
-                            Somos una empresa comprometida con la excelencia y la innovación. Desde nuestra fundación, 
-                            hemos trabajado incansablemente para proporcionar soluciones de calidad superior que 
-                            transforman los negocios de nuestros clientes. Nuestro equipo de profesionales altamente 
-                            calificados está dedicado a tu éxito.
-                        </p>
-                    </div>
-                    <div class="presentacion-image">
-                        <img src="Images/Equipo.jpg" alt="Equipo">
-                    </div>
-                </div>
+            <div class="nosotros-image">
+                <img src="Images/Equipo.jpg" alt="Equipo de seguridad">
             </div>
-            
-            <!-- Misión, Visión y Cobertura -->
-            <div class="nosotros-grid">
-                <div class="nosotros-card">
-                    <h4>Misión</h4>
-                    <p>
-                        Proporcionar soluciones innovadoras y de alta calidad que satisfagan las necesidades 
-                        de nuestros clientes, mejorando continuamente nuestros procesos y servicios para 
-                        generar valor real y sostenible.
-                    </p>
-                </div>
-                
-                <div class="nosotros-card">
-                    <h4>Visión</h4>
-                    <p>
-                        Ser el socio estratégico de confianza para empresas que buscan crecimiento y transformación 
-                        digital, liderando la industria con excelencia, integridad y compromiso con la excelencia.
-                    </p>
-                </div>
-                
-                <div class="nosotros-card">
-                    <h4>Cobertura</h4>
-                    <p>
-                        Operamos en toda Baja California, lo que nos permite ofrecer nuestros servicios
-                        , adaptandonos a las politicas y nececidades del nuestros cliente
-                    </p>
-                </div>
-            </div>
-            
-            <!-- Qué nos diferencia -->
-            <div class="diferencias">
-                <h3>¿Qué nos Diferencia?</h3>
-                <div class="diferencias-list">
-                    <div class="diferencias-item">
-                        <p><strong>Experiencia</strong> - Más de 10 años en la industria con casos de éxito comprobados</p>
-                    </div>
-                    <div class="diferencias-item">
-                        <p><strong>Equipo Especializado</strong> - Profesionales certificados y en constante capacitación</p>
-                    </div>
-                    <div class="diferencias-item">
-                        <p><strong>Tecnología</strong> - Usamos las herramientas y plataformas más avanzadas del mercado</p>
-                    </div>
-                    <div class="diferencias-item">
-                        <p><strong>Personalización</strong> - Soluciones adaptadas a tus necesidades específicas</p>
-                    </div>
-                    <div class="diferencias-item">
-                        <p><strong>Soporte 24/7</strong> - Disponibilidad constante para asegurar tu tranquilidad</p>
-                    </div>
-                    <div class="diferencias-item">
-                        <p><strong>Compromiso</strong> - Trabajamos como si fuéramos parte de tu equipo</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- SECCIÓN CONTACTO -->
-    <section id="contacto">
-        <div class="contacto-bg-mapa">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3000!2d-117.0382!3d32.5149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d95230fb7e7f8b%3A0x0!2sM%C3%A9xico!5e0!3m2!1ses!2smx!4v1234567890" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        
-        <div class="contacto-content">
-            <!-- Panel Izquierdo - Información -->
-            <div class="contacto-panel panel-izq">
-                <div class="panel-icon"></div>
-                <h3>Seguridad Privada</h3>
-                <p>¿Buscas seguridad privada? En nuestro equipo ofrecemos soluciones confiables para proteger tu empresa, residencia o evento. Contáctanos y recibe asesoramiento personalizado.</p>
-                
-                <hr class="separator">
-                
-                <div class="contacto-details">
-                    <div class="detail-item">
-                        <strong>Dirección:</strong>
-                        <p>Ubicación por definir</p>
-                    </div>
-                    
-                    <div class="detail-item">
-                        <span class="icon-phone">📞</span>
+            <div class="nosotros-content">
+                <span class="section-tag">SOBRE NOSOTROS</span>
+                <h2>COMPROMETIDOS CON TU TRANQUILIDAD</h2>
+                <p>Somos una empresa comprometida con la excelencia en seguridad privada. Desde nuestra fundación, hemos trabajado incansablemente para proporcionar soluciones confiables que protegen a nuestros clientes en toda Baja California.</p>
+                <a href="#contacto" class="btn btn-primary">ENVIAR MENSAJE</a>
+                <div class="nosotros-pilares">
+                    <div class="pilar">
+                        <div class="pilar-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                        </div>
                         <div>
-                            <strong>+52 664 9422514</strong>
-                            <p style="font-size: 0.9em; color: #666;">contacto@empresa.com</p>
+                            <h4>MISIÓN</h4>
+                            <p>Proporcionar soluciones de seguridad de alta calidad que satisfagan las necesidades de nuestros clientes.</p>
+                        </div>
+                    </div>
+                    <div class="pilar">
+                        <div class="pilar-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+                        </div>
+                        <div>
+                            <h4>VISIÓN</h4>
+                            <p>Ser el referente en seguridad privada en Baja California con excelencia e integridad.</p>
+                        </div>
+                    </div>
+                    <div class="pilar">
+                        <div class="pilar-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+                        </div>
+                        <div>
+                            <h4>COBERTURA</h4>
+                            <p>Operamos en toda Baja California, adaptándonos a las necesidades de cada cliente.</p>
                         </div>
                     </div>
                 </div>
             </div>
-            
-            <!-- Panel Derecho - Formulario -->
-            <div class="contacto-panel panel-der">
-                <div class="panel-icon"></div>
-                <h3>¿Tienes Preguntas?</h3>
-                <p style="margin-bottom: 20px; font-weight: 600; color: #333;">Envíanos un Mensaje</p>
-                
-                <form id="formulario-contacto">
-                    <input type="text" placeholder="Nombre" required>
-                    
-                    <div class="form-row">
-                        <input type="email" placeholder="Email" required>
-                        <input type="tel" placeholder="Teléfono" required>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto">
+        <div class="contacto-container">
+            <div class="contacto-info">
+                <h3>ESTAMOS PARA PROTEGERTE</h3>
+                <div class="contacto-item">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.56.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.56 1 1 0 01-.25 1.01l-2.2 2.22z"/></svg>
+                    <div>
+                        <strong>Teléfono</strong>
+                        <p>+52 664 942 2514</p>
                     </div>
-                    
-                    <input type="text" placeholder="Asunto" required>
-                    
-                    <textarea placeholder="Tu Mensaje" rows="4" required></textarea>
-                    
-                    <button type="submit">ENVIAR</button>
+                </div>
+                <div class="contacto-item">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                    <div>
+                        <strong>Correo</strong>
+                        <p>contacto@seguridadprivada.com</p>
+                    </div>
+                </div>
+                <div class="contacto-item">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+                    <div>
+                        <strong>Dirección</strong>
+                        <p>Tijuana, Baja California, México</p>
+                    </div>
+                </div>
+                <div class="contacto-item">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                    <div>
+                        <strong>Horario</strong>
+                        <p>Atención 24 horas, 7 días a la semana</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contacto-form-wrapper">
+                <form id="formulario-contacto">
+                    <input type="text" placeholder="Nombre completo" required>
+                    <input type="email" placeholder="Correo electrónico" required>
+                    <input type="tel" placeholder="Teléfono" required>
+                    <textarea placeholder="Tu mensaje" rows="4" required></textarea>
+                    <button type="submit" class="btn btn-primary btn-full">ENVIAR MENSAJE</button>
                 </form>
+            </div>
+
+            <div class="contacto-mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3000!2d-117.0382!3d32.5149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d95230fb7e7f8b%3A0x0!2sM%C3%A9xico!5e0!3m2!1ses!2smx!4v1234567890" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Ubicación en mapa"></iframe>
+                <a href="https://maps.google.com/?q=Tijuana,Baja+California" target="_blank" rel="noopener" class="btn btn-outline btn-maps">VER EN GOOGLE MAPS</a>
             </div>
         </div>
     </section>
 
-    <!-- Pops de Redes Sociales -->
-    <div class="social-pops">
-        <a href="https://wa.me/1234567890?text=Hola,%20me%20gustaría%20obtener%20más%20información" target="_blank" title="WhatsApp" class="social-btn whatsapp-btn">
-            📱
-        </a>
-        <a href="https://www.facebook.com/tu-pagina" target="_blank" title="Facebook" class="social-btn facebook-btn">
-            f
-        </a>
-        <a href="https://www.instagram.com/tu-usuario" target="_blank" title="Instagram" class="social-btn instagram-btn">
-            📸
-        </a>
-        <a href="https://www.linkedin.com/company/tu-empresa" target="_blank" title="LinkedIn" class="social-btn linkedin-btn">
-            in
-        </a>
-        <a href="mailto:info@ejemplo.com" title="Email" class="social-btn email-btn">
-            ✉️
-        </a>
-    </div>
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-bar">
+            <a href="#inicio" class="logo logo-footer">
+                <svg class="logo-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 2.18l7 3.11v5.71c0 4.54-3.07 8.86-7 9.93-3.93-1.07-7-5.39-7-9.93V6.29l7-3.11z"/>
+                </svg>
+                <span>SEGURIDAD <strong>PRIVADA</strong></span>
+            </a>
+            <p class="copyright">&copy; 2026 Seguridad Privada. Todos los derechos reservados.</p>
+            <div class="footer-social">
+                <a href="https://www.facebook.com/tu-pagina" target="_blank" rel="noopener" aria-label="Facebook">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                </a>
+                <a href="https://www.instagram.com/tu-usuario" target="_blank" rel="noopener" aria-label="Instagram">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                </a>
+                <a href="https://wa.me/526649422514" target="_blank" rel="noopener" aria-label="WhatsApp">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
 
-    <script type="text/javascript">
-        window.addEventListener("scroll", function(){
-            var header = document.querySelector("header");
-            var socialPops = document.querySelector(".social-pops");
-            header.classList.toggle("abajo", window.scrollY > 0);
-            socialPops.classList.toggle("scrolling", window.scrollY > 0);
-        })
+    <script>
+        const header = document.getElementById('header');
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('nav');
+
+        window.addEventListener('scroll', function () {
+            header.classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        menuToggle.addEventListener('click', function () {
+            const isOpen = nav.classList.toggle('open');
+            menuToggle.setAttribute('aria-expanded', isOpen);
+        });
+
+        document.querySelectorAll('nav a').forEach(function (link) {
+            link.addEventListener('click', function () {
+                nav.classList.remove('open');
+                menuToggle.setAttribute('aria-expanded', 'false');
+            });
+        });
     </script>
 </body>
 </html>
