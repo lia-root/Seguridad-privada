@@ -47,7 +47,21 @@ ul {
     list-style: none;
 }
 
+
 /* ===== UTILITIES ===== */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+}
+
+.logo-img {
+    height: 80px; /* Ajusta el tamaño */
+    width: auto;
+    display: block;
+}
+
 .highlight {
     color: var(--yellow);
 }
@@ -317,7 +331,7 @@ nav ul li a:hover {
 /* ===== SERVICIOS ===== */
 #servicios {
     background: var(--white);
-    padding: 80px 40px;
+    padding: 110px 40px;
 }
 
 .servicios-grid {
@@ -414,7 +428,7 @@ nav ul li a:hover {
 /* ===== POR QUÉ ELEGIRNOS ===== */
 .por-que {
     background: var(--black);
-    padding: 60px 40px;
+    padding: 30px 40px;
     color: var(--white);
     position: relative;
     margin-top: -60px;
@@ -485,7 +499,7 @@ nav ul li a:hover {
 /* ===== NOSOTROS ===== */
 #nosotros {
     background: var(--white);
-    padding: 80px 40px;
+    padding: 0px 40px;
 }
 
 .nosotros-container {
